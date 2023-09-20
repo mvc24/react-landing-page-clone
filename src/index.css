@@ -5,6 +5,7 @@
 }
 body {
   margin: 0;
+  font-family: 'Monserrat', sans-serif;
 }
 
 :root {
@@ -13,4 +14,15 @@ body {
   --background-color: #f8f6f5;
   --secondary-light: #d6cfc4;
   --secondary-dark: #fbd3b6;
+  background-color: var(--background-color);
+}
+
+h1 {
+  font-family: 'Newsreader', serif;
+  font-weight: 800;
+}
+
+h2,
+h3 {
+  font-weight: 600;
 }

@@ -1,0 +1,66 @@
+a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: 500;
+}
+.pageWrapper {
+  color: #00373e;
+
+  max-width: 1440px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  display: block;
+}
+
+.button {
+  color: #cafff2;
+  text-align: center;
+  background-color: #00373e;
+  border: 1px solid transparent;
+  border-radius: 99em;
+  padding: 0.875em 1.25em;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+    background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+    border-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.navigation {
+  align-items: center;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  background-color: bisque;
+  position: relative;
+  height: 60px;
+  width: 90%;
+  margin-top: 48px;
+  margin-bottom: 48px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+  }
+  .navButtons {
+    display: flex;
+    gap: 1rem;
+  }
+  .buttonLight {
+    outline-offset: 0px;
+    color: #00373e;
+    mix-blend-mode: normal;
+    background-color: #fff;
+    border-color: #d6cfc4;
+    outline: 3px #00373e;
+    align-self: flex-start;
+  }
+}

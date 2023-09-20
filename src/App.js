@@ -1,18 +1,32 @@
 import React from 'react';
+import styles from './App.module.scss';
 
 export default function App() {
   return (
-    <>
+    <main className={styles.pageWrapper}>
       <nav>
-        <ul>
-          <li>Parents</li>
-          <li>Sitters</li>
-          <li>Trust & Safety</li>
-          <li>Blog</li>
-        </ul>
-        <div>
-          <div>Log in</div>
-          <div>Sign up</div>
+        <div className={styles.navigation}>
+          <ul>
+            <li>
+              <a href="/#">Parents</a>
+            </li>
+            <li>
+              <a href="/#">Sitters</a>
+            </li>
+            <li>
+              <a href="/#">Trust & Safety</a>
+            </li>
+            <li>
+              <a href="/#">Blog</a>
+            </li>
+          </ul>
+          <div>Logo</div>
+          <div className={styles.navButtons}>
+            <a href="/#">Log in</a>
+            <div className={`${styles.button} ${styles.buttonLight}`}>
+              <a href="/#">Sign up</a>
+            </div>
+          </div>
         </div>
       </nav>
       <header>
@@ -60,6 +74,6 @@ export default function App() {
         <div>footer card dark</div>
         <div>footer card light</div>
       </footer>
-    </>
+    </main>
   );
 }
